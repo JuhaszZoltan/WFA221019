@@ -32,5 +32,12 @@ namespace WFA221019
                     dgvMain.Rows[rowIndex].DefaultCellStyle.BackColor = Color.LightCoral;
             }
         }
+
+        private void DgvMain_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int szemelyId = Convert.ToInt32(dgvMain[0, e.RowIndex].Value);
+            _ = new FrmReszletek(szemelyId)
+                .ShowDialog();
+        }
     }
 }
