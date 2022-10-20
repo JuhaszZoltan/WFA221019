@@ -33,6 +33,9 @@
             this.tsmiKereses = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvMain = new System.Windows.Forms.DataGridView();
+            this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNev = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.msMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
             this.SuspendLayout();
@@ -71,12 +74,43 @@
             // 
             // dgvMain
             // 
+            this.dgvMain.AllowUserToAddRows = false;
+            this.dgvMain.AllowUserToDeleteRows = false;
+            this.dgvMain.AllowUserToResizeColumns = false;
+            this.dgvMain.AllowUserToResizeRows = false;
+            this.dgvMain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMain.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMain.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colId,
+            this.colEv,
+            this.colNev});
             this.dgvMain.Location = new System.Drawing.Point(12, 44);
             this.dgvMain.Name = "dgvMain";
+            this.dgvMain.RowHeadersVisible = false;
             this.dgvMain.RowTemplate.Height = 25;
+            this.dgvMain.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMain.Size = new System.Drawing.Size(410, 355);
             this.dgvMain.TabIndex = 1;
+            // 
+            // colId
+            // 
+            this.colId.FillWeight = 1F;
+            this.colId.HeaderText = "Id";
+            this.colId.Name = "colId";
+            this.colId.Visible = false;
+            // 
+            // colEv
+            // 
+            this.colEv.FillWeight = 2F;
+            this.colEv.HeaderText = "Év";
+            this.colEv.Name = "colEv";
+            // 
+            // colNev
+            // 
+            this.colNev.FillWeight = 8F;
+            this.colNev.HeaderText = "Név";
+            this.colNev.Name = "colNev";
             // 
             // FrmMain
             // 
@@ -90,7 +124,7 @@
             this.MainMenuStrip = this.msMain;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
-            this.Text = "Form1";
+            this.Text = "József Attila Díj birtokosai";
             this.msMain.ResumeLayout(false);
             this.msMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();
@@ -106,5 +140,8 @@
         private ToolStripMenuItem tsmiKereses;
         private ToolStripMenuItem tsmiInfo;
         private DataGridView dgvMain;
+        private DataGridViewTextBoxColumn colId;
+        private DataGridViewTextBoxColumn colEv;
+        private DataGridViewTextBoxColumn colNev;
     }
 }
