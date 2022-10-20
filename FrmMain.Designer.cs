@@ -125,6 +125,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.Text = "József Attila Díj birtokosai";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.msMain.ResumeLayout(false);
             this.msMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();
