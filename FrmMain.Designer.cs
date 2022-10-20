@@ -28,55 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.újToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.keresésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.msMain = new System.Windows.Forms.MenuStrip();
+            this.tsmiUj = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiKereses = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.dgvMain = new System.Windows.Forms.DataGridView();
+            this.msMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // msMain
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.LightCoral;
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.újToolStripMenuItem,
-            this.keresésToolStripMenuItem,
-            this.infoToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(434, 29);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.msMain.BackColor = System.Drawing.Color.LightCoral;
+            this.msMain.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.msMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiUj,
+            this.tsmiKereses,
+            this.tsmiInfo});
+            this.msMain.Location = new System.Drawing.Point(0, 0);
+            this.msMain.Name = "msMain";
+            this.msMain.Size = new System.Drawing.Size(434, 29);
+            this.msMain.TabIndex = 0;
+            this.msMain.Text = "menuStrip1";
             // 
-            // újToolStripMenuItem
+            // tsmiUj
             // 
-            this.újToolStripMenuItem.Name = "újToolStripMenuItem";
-            this.újToolStripMenuItem.Size = new System.Drawing.Size(37, 25);
-            this.újToolStripMenuItem.Text = "Új";
+            this.tsmiUj.Name = "tsmiUj";
+            this.tsmiUj.Size = new System.Drawing.Size(37, 25);
+            this.tsmiUj.Text = "Új";
             // 
-            // keresésToolStripMenuItem
+            // tsmiKereses
             // 
-            this.keresésToolStripMenuItem.Name = "keresésToolStripMenuItem";
-            this.keresésToolStripMenuItem.Size = new System.Drawing.Size(75, 25);
-            this.keresésToolStripMenuItem.Text = "Keresés";
+            this.tsmiKereses.Name = "tsmiKereses";
+            this.tsmiKereses.Size = new System.Drawing.Size(75, 25);
+            this.tsmiKereses.Text = "Keresés";
             // 
-            // infoToolStripMenuItem
+            // tsmiInfo
             // 
-            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(49, 25);
-            this.infoToolStripMenuItem.Text = "Info";
+            this.tsmiInfo.Name = "tsmiInfo";
+            this.tsmiInfo.Size = new System.Drawing.Size(49, 25);
+            this.tsmiInfo.Text = "Info";
             // 
-            // dataGridView1
+            // dgvMain
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 44);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(410, 355);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMain.Location = new System.Drawing.Point(12, 44);
+            this.dgvMain.Name = "dgvMain";
+            this.dgvMain.RowTemplate.Height = 25;
+            this.dgvMain.Size = new System.Drawing.Size(410, 355);
+            this.dgvMain.TabIndex = 1;
             // 
             // FrmMain
             // 
@@ -84,16 +84,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(434, 411);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.dgvMain);
+            this.Controls.Add(this.msMain);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MainMenuStrip = this.msMain;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.Text = "Form1";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.msMain.ResumeLayout(false);
+            this.msMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,10 +101,10 @@
 
         #endregion
 
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem újToolStripMenuItem;
-        private ToolStripMenuItem keresésToolStripMenuItem;
-        private ToolStripMenuItem infoToolStripMenuItem;
-        private DataGridView dataGridView1;
+        private MenuStrip msMain;
+        private ToolStripMenuItem tsmiUj;
+        private ToolStripMenuItem tsmiKereses;
+        private ToolStripMenuItem tsmiInfo;
+        private DataGridView dgvMain;
     }
 }
